@@ -1,0 +1,125 @@
+<div class="">
+    <div class=" text-center mb-5 mt-5 row p-5">
+
+
+        <div class="col-6">
+
+            <div class="">
+                <h1 class="text-success">Fill Your Details</h1>
+            </div>
+
+
+
+            <form (ngSubmit)="confbook()" [formGroup]="bookingForm" action="" class="container p-5  bg-light mt-5 form"
+                style="border:2px solid grey">
+
+
+
+
+
+
+                <input formControlName="name" type="text" class="mt-3 form-control p-2 " style="border: 1px solid;"
+                    name="pn1" id="pid1" placeholder="Name"> <br>
+
+
+                <div *ngIf="(this.bookingForm.get('name')?.errors)&&(this.bookingForm.get('name')?.touched)">
+                    <p style="font-size: 15px;" class="text-danger">must contain characters only </p>
+                </div>
+
+
+                <input formControlName="age" type="text" class="mt-3 form-control p-2  " style="border: 1px solid;"
+                    name="pn3" id="pid3" placeholder="Age"> <br>
+
+
+
+                <div *ngIf="(this.bookingForm.get('age')?.errors)&&(this.bookingForm.get('age')?.touched)">
+                    <p style="font-size: 15px;" class="text-danger"> must contain numbers only </p>
+                </div>
+
+
+
+                <input formControlName="adress" type="text" class="mt-3 form-control p-2  Address "
+                    style="border: 1px solid;" name="pn7" id="pid7" placeholder="Address"> <br>
+
+
+
+
+
+
+
+
+                <input formControlName="npass" type="text" class="mt-3 form-control p-2  " style="border: 1px solid;"
+                    name="pn4" id="pid4" placeholder="No of Passengers"> <br>
+
+
+
+                <div *ngIf="(this.bookingForm.get('npass')?.errors)&&(this.bookingForm.get('npass')?.touched)">
+                    <p style="font-size: 15px;" class="text-danger"> must contain numbers only </p>
+                </div>
+
+
+
+
+
+                <input formControlName="cn" type="text" class="mt-3 form-control p-2  " style="border: 1px solid;"
+                    name="pn8" id="pid8" placeholder="Contact Number"> <br>
+
+
+
+
+                <div *ngIf="(this.bookingForm.get('cn')?.errors)&&(this.bookingForm.get('cn')?.touched)">
+                    <p style="font-size: 15px;" class="text-danger">must contain numbers only </p>
+                </div>
+
+
+
+
+
+                <input formControlName="cdstn" type="text" class="mt-3 form-control p-2 " style="border: 1px solid;"
+                    name="pn9" id="pid9" placeholder="Confirm Your Destination"> <br>
+
+
+
+
+                <div *ngIf="(this.bookingForm.get('cdstn')?.errors)&&(this.bookingForm.get('cdstn')?.touched)">
+                    <p style="font-size: 15px;" class="text-danger"> must contain charcters only </p>
+                </div>
+
+
+
+
+                <input formControlName="psw" type="password" class="mt-3 form-control p-2 " style="border: 1px solid;"
+                    name="pn9" id="pid9" placeholder="Password"> <br>
+
+
+
+
+                <div *ngIf="(this.bookingForm.get('psw')?.errors)&&(this.bookingForm.get('psw')?.touched)">
+                    <p style="font-size: 15px;" class="text-danger"> must contain numbers only </p>
+                </div>
+
+
+                <button class="btn btn-warning ms-2 mt-4" type="submit">Confirm Booking</button>
+
+
+
+
+
+            </form>
+
+        </div>
+
+
+
+        <div class="col-6">
+
+
+            <img class="p-5" src="https://i.postimg.cc/tJSCnQRy/suited-man-setmore-book-button.png" alt="">
+
+        </div>
+
+
+
+
+    </div>
+</div>

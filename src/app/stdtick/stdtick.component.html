@@ -1,0 +1,101 @@
+<div class="">
+    <div class="container text-center w-50 mb-5 mt-5">
+
+
+
+        <div class="">
+            <h1 class="text-success">Fill Your Details</h1>
+        </div>
+
+
+
+        <form (ngSubmit)="hconfbook()" action="" [formGroup]="hbookingForm" class="container p-5 border bg-secondary mt-5 form">
+
+
+
+
+
+
+
+            <input formControlName="name" type="text" class="mt-3 form-control p-2 border" name="pn1" id="pid1"
+                placeholder="Name"> <br>
+
+                <div *ngIf="(this.hbookingForm.get('name')?.errors)&&(this.hbookingForm.get('name')?.touched)">
+                    <p style="font-size: 15px;" class="text-danger">must contain characters only </p>
+                </div>
+
+
+            <input formControlName="age" type="text" class="mt-3 form-control p-2 border " name="pn3" id="pid3"
+                placeholder="Age"> <br>
+
+                <div *ngIf="(this.hbookingForm.get('age')?.errors)&&(this.hbookingForm.get('age')?.touched)">
+                    <p style="font-size: 15px;" class="text-danger"> must contain numbers only </p>
+                </div>
+    
+
+
+            <input formControlName="adress" type="text" class="mt-3 form-control p-2 border Address " name="pn7"
+                id="pid7" placeholder="Address"> <br>
+
+
+
+
+
+            <input formControlName="nadm" type="text" class="mt-3 form-control p-2 border " name="pn4" id="pid4"
+                placeholder="No of Admits"> <br>
+
+
+                <div *ngIf="(this.hbookingForm.get('nadm')?.errors)&&(this.hbookingForm.get('nadm')?.touched)">
+                    <p style="font-size: 15px;" class="text-danger">must contain characters only </p>
+                </div>
+
+
+
+            <input formControlName="nac" type="text" class="mt-3 form-control p-2 border " name="pn4" id="pid4"
+                placeholder="AC or Non-AC"> <br>
+
+
+                <div *ngIf="(this.hbookingForm.get('nac')?.errors)&&(this.hbookingForm.get('nac')?.touched)">
+                    <p style="font-size: 15px;" class="text-danger">must contain characters only </p>
+                </div>
+
+
+
+
+
+            <input formControlName="cn" type="text" class="mt-3 form-control p-2 border " name="pn8" id="pid8"
+                placeholder="Contact Number"> <br>
+
+
+                <div *ngIf="(this.hbookingForm.get('cn')?.errors)&&(this.hbookingForm.get('cn')?.touched)">
+                    <p style="font-size: 15px;" class="text-danger">must contain characters only </p>
+                </div>
+
+
+
+
+
+            <input formControlName="psw" type="password" class="mt-3 form-control p-2 border " name="pn9" id="pid9"
+                placeholder="Password"> <br>
+
+
+                <div *ngIf="(this.hbookingForm.get('psw')?.errors)&&(this.hbookingForm.get('psw')?.touched)">
+                    <p style="font-size: 15px;" class="text-danger">must contain characters only </p>
+                </div>
+
+
+
+            <button class="btn btn-warning ms-2 mt-4" type="submit" >Confirm Booking</button>
+
+
+
+
+
+        </form>
+
+
+
+
+
+    </div>
+</div>

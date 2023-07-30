@@ -1,0 +1,10 @@
+header{
+    height: 70px;  
+}
+footer{
+    height: 50px;
+    background-color: rgb(226, 43, 110);
+}
+body{
+    font-family: 'Bona Nova', serif;
+}

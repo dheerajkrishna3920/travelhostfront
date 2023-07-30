@@ -1,0 +1,55 @@
+<div class="maindiv p-3">
+
+  
+
+    <div class="container mt-5 logindiv mb-2 text-center p-5 ">
+        <form [formGroup]="registerForm" (ngSubmit)="register()" action="" class="text-center">
+
+            <h1 class=" text-center">Sign In</h1>
+
+            <input formControlName="acno" class="mt-4 form-control acno container" placeholder="Account No" type="text"
+                id="aid" name="ane"> <br>
+
+
+            <div *ngIf="(this.registerForm.get('acno')?.errors)&&(this.registerForm.get('acno')?.touched)">
+                <p style="font-size: 15px;" class="text-danger">Account number must contain numbers only </p>
+            </div>
+
+
+            <input formControlName="uname" class="mt-2 form-control acno container" placeholder="UserName" type="text"
+                id="uid" name="une"> <br>
+
+            <div *ngIf="(this.registerForm.get('uname')?.errors)&&(this.registerForm.get('uname')?.touched)">
+                <p style="font-size: 15px;" class="text-danger">Username must contain Characters only </p>
+            </div>
+
+
+            <input formControlName="psw" class="mt-2 form-control acno container" placeholder="Password" type="password"
+                id="pid" name="pne"> <br>
+
+
+            <div *ngIf="(this.registerForm.get('psw')?.errors)&&(this.registerForm.get('psw')?.touched)">
+                <p style="font-size: 15px;" class="text-danger">Password must contain Characters and numbers only </p>
+            </div>
+
+
+            <input formControlName="cpsw" class="mt-2 form-control psw container" placeholder="Confirm Password"
+                type="Password" id="cid" name="cne">
+
+
+
+            <div *ngIf=" pswCheck">
+                <p style="font-size: 15px;" class="text-danger">Password deosnt match</p>
+            </div>
+
+
+            <button type="submit" class="btn btn-success mt-4 loginbut w-25">Sign Up</button>
+
+
+        </form>
+
+    </div>
+
+
+
+</div>

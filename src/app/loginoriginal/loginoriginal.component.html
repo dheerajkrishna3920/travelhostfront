@@ -1,0 +1,40 @@
+<div class="text-center p-3 maindiv">
+
+  
+
+    <div class="w-50 mt-5 logindiv mb-2 container p-5 ">
+        <form [formGroup]="logInForm" (ngSubmit)="logIn()" action="" class="text-center">
+
+            <h1 class=" text-center">Log In</h1>
+
+            <input formControlName="acno" class="mt-5 form-control acno container" placeholder="Account No" type="text"
+                id="idac" name="acne"> <br>
+
+
+
+            <div *ngIf="(this.logInForm.get('acno')?.errors)&&(this.logInForm.get('acno')?.touched)">
+                <p style="font-size: 15px;" class="text-danger">Account number must contain numbers only </p>
+            </div>
+
+
+            <input formControlName="psw" class="mt-5 form-control psw container" placeholder="Password" type="Password"
+                id="idpw" name="pwne">
+
+
+
+
+            <div *ngIf="(this.logInForm.get('psw')?.errors)&&(this.logInForm.get('psw')?.touched)">
+                <p style="font-size: 15px;" class="text-danger">Password must contain Characters and numbers only </p>
+            </div>
+
+
+
+
+            <button type="submit" class="btn btn-warning mt-5 loginbut w-25">Log In</button>
+            <div class="text-center linkreg mt-4" style="color:red;">
+                don't you have an account? <a class="click" routerLink="/register" style="color:black;">click here</a>
+            </div>
+
+        </form>
+
+    </div>

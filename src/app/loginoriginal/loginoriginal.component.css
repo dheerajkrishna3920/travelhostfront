@@ -1,0 +1,21 @@
+.maindiv {
+  height: 618px;
+}
+
+.logindiv {
+  background-color:  #bbbba8;
+  border-radius: 45px;
+
+}
+
+.acno {
+  width: 70%
+}
+
+.psw {
+  width: 70%
+}
+
+.linkreg {
+  color: beige;
+}

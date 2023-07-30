@@ -1,0 +1,22 @@
+h1{
+    color: crimson;
+}
+.row{
+    margin: 0px;
+}
+img{
+    height: 264px;
+}
+.card{
+    height:500px
+}
+h3{
+    color: darkorange;
+}
+.d{
+    transition:ease-in-out 0.5s
+   
+}
+.d:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,26 @@
+this.date = new Date()
+let latest_date = this.datepipe.transform(this.date, 'short')
+this.user = localStorage.getItem('currentUser')
+this.acno = localStorage.getItem('currentAcno')
+this.ds.ticketapi(this.user,
+  this.acno,
+  this.bookingForm.value.ae,
+  this.bookingForm.value.as,
+  this.bookingForm.value.np,
+  this.bookingForm.value.bp,
+  this.bookingForm.value.tb,
+  this.bookingForm.value.cn,
+  this.bookingForm.value.psw,
+  latest_date).subscribe((result: any) => {
+    console.log(result);
+
+
+
+
+
+    let name = this.bookingForm.value.name
+    let age = this.bookingForm.value.age
+    let adress = this.bookingForm.value.adress
+    let npass = this.bookingForm.value.npass
+    let cn = this.bookingForm.value.cn
+    let psw = this.bookingForm.value.psw

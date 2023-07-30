@@ -1,0 +1,22 @@
+img{
+  border-radius: 20px;
+}
+.main{
+    height: 800px;
+}
+h3{
+    color:#470d49
+}
+h4{
+  color: red;
+}
+.row{
+  margin: 0px;
+}
+.div{
+  height: 300px;
+  background-image: url('https://i.postimg.cc/8PqwqbWT/500-F-132940703-DP1q-Lzfqr5yk-S8pvgu3w-YBh-JMrwpmm-Yp.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

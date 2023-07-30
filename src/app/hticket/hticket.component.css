@@ -1,0 +1,19 @@
+img{
+    border-radius: 20px;
+  }
+  .main{
+      height: 800px;
+  }
+  h3{
+      color:#470d49
+  }
+  h4{
+    color: red;
+  }
+  .row{
+    margin: 0px;
+  }
+  .bg{
+    background-color: rgb(255, 255, 255);
+  }
+  

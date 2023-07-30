@@ -1,0 +1,74 @@
+
+
+
+
+
+
+
+
+
+
+<div class="bg-light p-5 row ">
+
+
+
+    <div *ngFor="let i of tickets let n=index" class="card container w-25 bg-light col-6  ms-5 mb-5" style="width: 18rem;">
+        <img src="https://i.postimg.cc/k54gCny2/happy-man-with-hands-up-enjoying-wellbeing-freedom-169160-791.jpg"
+            class="card-img-top mt-5" alt="...">
+        <div class="card-body">
+            <h3 class="card-title text-center">Confirmation Receipt</h3>
+            <hr>
+            <h4 class="text-center text-dark">Visit at : {{i.cdstn}} </h4>
+            <hr>
+            <h4 class="text-center text-dark">Booking : {{n+1}} </h4>
+            <hr>
+            <h6 class="text-center text-dark">{{date | date : 'medium'}}</h6>
+            <hr>
+            <div class="row">
+
+                <div class="col-6">
+                    <h6>Account Holder :{{user}} </h6>
+                </div>
+
+                <div class="col-6">
+                    <h6>Account Number : {{acno}}</h6>
+                </div>
+
+            </div>
+            <hr>
+
+
+
+            <div class="text-center">
+                <h5>Name : {{i.name}} </h5>
+                <hr>
+    
+                <h5>Age : {{i.age}} </h5>
+                <hr>
+                <h5>Address : {{i.adress}} </h5>
+                <hr>
+                <h5>No of Passengers : {{i.npass}} </h5>
+                <hr>
+                <h5>Contact No : {{i.cn}} </h5>
+                <hr>
+            </div>
+
+           
+
+
+            <div class="container lowdiv mt-5 mb-5">
+                <p class="text-danger"> Receipt holder should bring a valid id at the start of tour for verification
+                    purpose</p>
+                <p class="text-danger mb-5">The assigned tour-coordinator will reach you out with in 24 hours</p>
+                <hr>
+                <h3 class="text-center mt-5 ">Happy Journey...</h3>
+            </div>
+
+
+          
+
+        </div>
+    </div>
+
+    
+</div>

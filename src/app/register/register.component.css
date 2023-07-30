@@ -1,0 +1,24 @@
+.maindiv {
+  margin: 0;
+  height: 615px;
+}
+
+.logindiv {
+background-color: #e3e39b;
+  border-radius: 45px;
+  width: 50%;
+  height: 500px;
+
+}
+
+.acno {
+  width: 70%
+}
+
+.psw {
+  width: 70%
+}
+
+.linkreg {
+  color: beige;
+}

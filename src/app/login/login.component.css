@@ -1,0 +1,36 @@
+.div1{
+  height: 700px;
+}
+.cimg{
+  height: 700px;
+}
+.row{
+  margin: 0;
+}
+.logindiv{
+  background-color:rgb(33, 118, 138);
+  border-radius: 45px;
+  width: 50%;
+}
+.acno{
+  width:50%
+}
+.psw{
+  width:50%
+}
+.linkreg{
+  color: beige;
+}
+.h1{
+  
+  margin-left: 500px;
+  font-size: 45px;
+}
+.h2{
+  margin-bottom: 350px;
+  
+  margin-left: 500px;
+ 
+}
+
+
